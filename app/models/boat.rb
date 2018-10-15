@@ -32,7 +32,7 @@ class Boat < ActiveRecord::Base
 
   end
   def self.catamaran_operators
-    binding.pry
+    
     all.where(classifications: {name: 'Catamaran'})
   end
 
